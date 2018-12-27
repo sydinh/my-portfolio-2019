@@ -2,7 +2,7 @@
   "name": "my-portfolio-2019",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://sydinh.github.io/my-portfolio-2019",
+  "homepage": "https://sydinh.github.io/my-portfolio-2019",
   "dependencies": {
     "classnames": "^2.2.6",
     "normalize.css": "^8.0.1",
