@@ -1,0 +1,70 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// @type Position
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+  position: $position;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+
+/// @type Display Model
+@mixin flexbox-centering() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexbox-centering-vertical() {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flexbox-centering-horizontal() {
+  display: flex;
+  justify-content: center;
+}
+
+/// @type Box Model
+@mixin square($dimension) {
+  width: $dimension;
+  height: $dimension;
+}
+
+@mixin circle($dimension) {
+  width: $dimension;
+  height: $dimension;
+  border-radius: 50%;
+}
+
+/// @type Text and Color
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// @type Other
+@mixin transition($what: all, $time: 0.5s, $how: ease-out) {
+  transition: $what $time $how;
+}
+
+@mixin list-unstyled() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

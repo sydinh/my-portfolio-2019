@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// @type Paths
+$img-url: '../images';
+
+/// @type Font family
+$font-family-base: 'Open Sans', sans-serif;
+$h1: 36px;
+$h2: 28px;
+$h3: 24px;
+$h4: 18px;
+$h5: 14px;
+$h6: 12px;
+
+/// @type Font size
+$font-size-base: 16px;
+
+/// @type Font weight
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+
+/// @type Color
+$white: #fff;
+$black: #000;
+$brand-color: #eece1a;
+$brand-background: #444;
+
+/// @type Borders
+$border-radius-hack: 100px;
+
+/// @type Positions
+$z-indexes: (
+  base: 1,
+  under: -1,
+  upper: 2,
+);
+
+/// @type Components
+$footer-height: 60px;
+$footer-background: #2b2b2b;
+$card-job-background: #515151;

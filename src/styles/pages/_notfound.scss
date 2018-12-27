@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the 404 page.
+// -----------------------------------------------------------------------------
+
+.notfound {
+  @include flexbox-centering;
+  flex-direction: column;
+  text-align: center;
+
+  &__logo {
+    margin: 0 0 24px;
+    font-size: 180px;
+    line-height: 1;
+    font-weight: $font-weight-semi-bold;
+    letter-spacing: 5px;
+  }
+
+  &__title {
+    margin: 0 0 18px;
+    font-size: $h1;
+    font-weight: $font-weight-regular;
+    letter-spacing: 1.5px;
+  }
+
+  &__subtitle {
+    margin: 0 0 12px;
+    font-size: $h4;
+    font-weight: $font-weight-light;
+    letter-spacing: 1.5px;
+  }
+}

@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the work page.
+// -----------------------------------------------------------------------------
+
+.work {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  &__item {
+    width: calc(25% - 30px);
+    margin: 15px;
+  }
+}

@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the cards component.
+// -----------------------------------------------------------------------------
+
+.job {
+  height: 100%;
+  padding: 15px;
+  border-bottom: 5px solid $brand-color;
+  background: $card-job-background;
+
+  &__title {
+    margin: 0;
+    font-size: $h4;
+    font-weight: $font-weight-regular;
+  }
+
+  &__subtitle {
+    margin: 8px 0 16px;
+    font-size: $h6;
+    font-weight: $font-weight-regular;
+  }
+
+  &__desc {
+    margin: 0;
+  }
+}
+
+.project {
+  &__img-container {
+    display: block;
+  }
+
+  &__img {
+    @include transition;
+    width: 100%;
+    min-height: 200px;
+    border: 3px solid $white;
+
+    @include on-event() {
+      opacity: 0.5;
+      border: 3px solid $brand-color;
+    }
+  }
+
+  &__btn {
+    @include flexbox-centering-vertical;
+    height: 40px;
+    margin: 5px 0;
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: $font-weight-regular;
+
+    @include on-event() {
+      color: $black;
+      background: $brand-color;
+    }
+  }
+
+  &__btn-light {
+    color: #333;
+    background: #c4c4c4;
+  }
+
+  &__btn-dark {
+    color: $white;
+    background: $black;
+  }
+
+  &__btn-icon {
+    width: 15px;
+    height: 100%;
+    margin-right: 6px;
+  }
+}

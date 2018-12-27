@@ -1,0 +1,118 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the navigation component.
+// -----------------------------------------------------------------------------
+
+.menu-btn {
+  $this: &;
+
+  @include position(fixed, 35px, 35px, null, null);
+  @include transition;
+  z-index: z(upper) + 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+
+  &.close {
+    transform: rotate(180deg);
+
+    #{$this}__item {
+      &:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+      }
+    }
+  }
+
+  &__item {
+    @include transition;
+    height: 3px;
+    border-radius: $border-radius-hack;
+    background: $white;
+  }
+}
+
+.menu {
+  $this: &;
+
+  @include position(fixed, 0, 0, 0, 0);
+  z-index: z(upper);
+  opacity: 0.9;
+  display: flex;
+  visibility: hidden;
+
+  &.active {
+    visibility: visible;
+
+    #{$this}__brand,
+    #{$this}__nav,
+    #{$this}__nav-item {
+      transform: translate3d(0, 0, 0);
+    }
+
+    #{$this}__nav-item {
+      &:nth-child(1) {
+        transition-delay: 0.1s;
+      }
+      &:nth-child(2) {
+        transition-delay: 0.2s;
+      }
+      &:nth-child(3) {
+        transition-delay: 0.3s;
+      }
+      &:nth-child(4) {
+        transition-delay: 0.4s;
+      }
+    }
+  }
+
+  &__brand,
+  &__nav {
+    @include flexbox-centering;
+    flex: 1 1 0%;
+  }
+
+  &__brand {
+    @include transition;
+    background: $brand-background;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  &__brand-img {
+    @include circle(250px);
+    border: 3px solid $brand-color;
+  }
+
+  &__nav {
+    @include list-unstyled;
+    @include transition;
+    flex-direction: column;
+    background: #373737;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  &__nav-item {
+    @include transition;
+    margin: 10px 0;
+    transform: translate3d(600px, 0, 0);
+  }
+
+  &__nav-link {
+    font-size: 30px;
+    font-weight: $font-weight-regular;
+    text-transform: uppercase;
+
+    &.active {
+      color: $brand-color;
+    }
+  }
+}

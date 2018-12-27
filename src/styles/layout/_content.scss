@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the content of the site/application.
+// -----------------------------------------------------------------------------
+
+.page {
+  min-height: 100vh;
+  padding: 64px;
+
+  &--has-footer {
+    min-height: calc(100vh - #{$footer-height});
+  }
+
+  &__title {
+    margin: 0 0 15px;
+    font-size: 80px;
+    font-weight: $font-weight-regular;
+    text-transform: capitalize;
+  }
+
+  &__subtitle {
+    margin: 0 0 30px;
+    padding: 5px 15px;
+    font-size: 24px;
+    background: rgba(73, 73, 73, 0.5);
+    font-weight: $font-weight-light;
+  }
+}

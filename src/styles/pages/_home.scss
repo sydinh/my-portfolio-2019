@@ -1,0 +1,37 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.home {
+  @include flexbox-centering-horizontal;
+  flex-direction: column;
+  position: relative;
+  z-index: z(base);
+  background: url(#{$img-url}/background.jpg) no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+  &:before {
+    @include position(absolute, 0, 0, 0, 0);
+    z-index: z(under);
+    content: '';
+    background: rgba(68, 68, 68, 0.9);
+  }
+
+  &__list {
+    @include flexbox-centering-vertical;
+  }
+
+  &__item {
+    @include flexbox-centering;
+    @include square(32px);
+
+    &:not(:first-child) {
+      margin-left: 16px;
+    }
+  }
+
+  &__icon {
+    @include square(100%);
+  }
+}

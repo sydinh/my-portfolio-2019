@@ -1,0 +1,9 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+
+.footer {
+  @include flexbox-centering;
+  height: $footer-height;
+  background: $footer-background;
+}

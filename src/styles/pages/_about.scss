@@ -1,0 +1,41 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the about page.
+// -----------------------------------------------------------------------------
+
+.about {
+  &__bio {
+    @include flexbox-centering-vertical;
+    margin: 15px 0;
+  }
+
+  &__bio-img {
+    @include circle(250px);
+    margin: 0 60px;
+    border: 3px solid $brand-color;
+  }
+
+  &__bio-content {
+    flex: 1 1 0%;
+  }
+
+  &__bio-title {
+    margin: 0 0 10px;
+    font-size: $h2;
+    text-transform: uppercase;
+  }
+
+  &__bio-desc {
+    margin: 5px 0;
+  }
+
+  &__jobs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  &__jobs-item {
+    width: calc(100% / 3 - 30px);
+    margin: 15px;
+  }
+}
