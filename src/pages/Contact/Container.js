@@ -10,6 +10,8 @@ import Main from 'components/Main';
 import Heading from 'components/Typographies/Heading';
 import SubHeading from 'components/Typographies/SubHeading';
 
+import List from './components/List';
+
 const ContactContainer = () => (
   <SecondaryLayout>
     <Helmet>
@@ -20,20 +22,7 @@ const ContactContainer = () => (
         Contact <span className="text-brand">Me</span>
       </Heading>
       <SubHeading>This is how you can reach me...</SubHeading>
-      <div className="contact__list">
-        <div className="contact__item">
-          <span className="text-brand">Email:</span>
-          sydinh.dev@gmail.com
-        </div>
-        <div className="contact__item">
-          <span className="text-brand">Phone:</span>
-          (+84) 348 019 521
-        </div>
-        <div className="contact__item">
-          <span className="text-brand">Address:</span>
-          Da nang, Viet nam
-        </div>
-      </div>
+      <List />
     </Main>
   </SecondaryLayout>
 );

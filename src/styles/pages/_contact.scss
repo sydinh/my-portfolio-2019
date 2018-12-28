@@ -21,7 +21,6 @@
     }
 
     @include on-event() {
-      padding: 12px 24px;
       color: $black;
       background: $brand-color;
 

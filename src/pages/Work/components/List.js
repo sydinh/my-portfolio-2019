@@ -3,7 +3,7 @@ import React from 'react';
 import ProjectCard from 'components/Cards/ProjectCard';
 import { data as projects } from './mockAPI';
 
-const Projects = () => (
+const List = () => (
   <div className="work__list">
     {projects.map(project => (
       <div key={project.id} className="work__item">
@@ -13,4 +13,4 @@ const Projects = () => (
   </div>
 );
 
-export default Projects;
+export default List;
