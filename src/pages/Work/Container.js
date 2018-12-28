@@ -10,8 +10,6 @@ import Main from 'components/Main';
 import Heading from 'components/Typographies/Heading';
 import SubHeading from 'components/Typographies/SubHeading';
 
-import List from './components/List';
-
 const WorkContainer = () => (
   <SecondaryLayout>
     <Helmet>
@@ -22,7 +20,7 @@ const WorkContainer = () => (
         My <span className="text-brand">Work</span>
       </Heading>
       <SubHeading>Check out some of my projects...</SubHeading>
-      <List />
+      <span>Coming Soon!</span>
     </Main>
   </SecondaryLayout>
 );
