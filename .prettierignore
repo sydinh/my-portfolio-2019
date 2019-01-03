@@ -1,4 +1,4 @@
-# See https://prettier.io/docs/en/ignore.html#ignoring-files for more about ignoring files.
+# See https://prettier.io/docs/en/ignore#ignoring-files for more about ignoring files.
 
 # dependencies
 /node_modules
