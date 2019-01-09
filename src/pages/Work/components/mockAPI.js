@@ -1,10 +1,5 @@
 const data = [
   {
-    id: 0,
-    live: 'http://shop-management.surge.sh/',
-    source: 'https://github.com/hahuutin/shop-management',
-  },
-  {
     id: 1,
     live: 'https://frontend-styleguide.firebaseapp.com/',
     source: 'https://github.com/sydinh/frontend-styleguide',
