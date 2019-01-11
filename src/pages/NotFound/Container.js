@@ -16,7 +16,7 @@ const NotFoundContainer = () => (
     <Main page="notfound">
       <div className="notfound__logo">404</div>
       <h1 className="notfound__title text-brand">Sorry, page not found!</h1>
-      <h4 className="notfound__subtitle">It seem like you're heading in the wrong direction</h4>
+      <h4 className="notfound__subtitle">It seems like you're heading in the wrong direction</h4>
       <Link to={routes.HOME} className="text-brand">
         Go to the homepage
       </Link>

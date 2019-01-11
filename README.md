@@ -1,3 +1,3 @@
-# my-portfolio-2019
+# Welcome to my portfolio 2019
 
-https://sydinh.github.io/my-portfolio-2019
+https://my-portfolio-2019.firebaseapp.com
