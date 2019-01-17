@@ -23,7 +23,6 @@ Main.propTypes = {
 };
 
 Main.defaultProps = {
-  page: '',
   hasFooter: false,
 };
 
