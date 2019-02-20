@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { compose } from 'recompose';
 
-import withScrollToTopOnMount from 'utils/withScrollToTopOnMount';
+import withScroll from 'utils/withScroll';
 import withMenu from 'utils/withMenu';
 import SecondaryLayout from 'layouts/SecondaryLayout';
 
@@ -28,6 +28,6 @@ const ContactContainer = () => (
 );
 
 export default compose(
-  withScrollToTopOnMount,
+  withScroll,
   withMenu,
 )(ContactContainer);

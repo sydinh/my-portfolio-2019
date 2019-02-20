@@ -8,8 +8,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
 class ErrorBoundary extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       hasError: false,
       errorInfo: null,
