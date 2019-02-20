@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import { compose } from 'recompose';
 
-import withScrollToTopOnMount from 'utils/withScrollToTopOnMount';
+import withScroll from 'utils/withScroll';
 import withMenu from 'utils/withMenu';
 import PrimaryLayout from 'layouts/PrimaryLayout';
 
@@ -28,6 +28,6 @@ const HomeContainer = () => (
 );
 
 export default compose(
-  withScrollToTopOnMount,
+  withScroll,
   withMenu,
 )(HomeContainer);

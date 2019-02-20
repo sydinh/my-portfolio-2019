@@ -11,25 +11,6 @@ import Sidenav from 'components/Sidenav';
 
 const withMenu = WrappedComponent => {
   class Menu extends React.Component {
-    constructor() {
-      super();
-      this.state = {
-        isSidenavActive: false,
-      };
-    }
-
-    componentDidMount() {
-      document.body.classList.remove('menu-active');
-    }
-
-    handleMenuBtnClick = () => {
-      this.setState(prevState => {
-        return {
-          isSidenavActive: !prevState.isSidenavActive,
-        };
-      });
-    };
-
     static getDerivedStateFromProps(_, state) {
       if (state.isSidenavActive) {
         document.body.classList.add('menu-active');
@@ -38,6 +19,21 @@ const withMenu = WrappedComponent => {
       }
       return null;
     }
+
+    constructor(props) {
+      super(props);
+      this.state = { isSidenavActive: false };
+    }
+
+    componentDidMount() {
+      document.body.classList.remove('menu-active');
+    }
+
+    handleMenuBtnClick = () => {
+      this.setState(prevState => {
+        return { isSidenavActive: !prevState.isSidenavActive };
+      });
+    };
 
     render() {
       return (

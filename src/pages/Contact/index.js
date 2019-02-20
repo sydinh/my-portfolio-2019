@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 
 import Loading from 'components/Loading';
-import ErrorBoundary from 'utils/ErrorBoundary';
+import ErrorBoundary from 'components/ErrorBoundary';
 
 const LazyLoadedContainer = lazy(() => import('./Container'));
 

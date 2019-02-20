@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import * as routes from 'constants/routes';
+import * as ROUTES from 'constants/routes';
 
 const MenuNav = () => {
   const props = {
@@ -12,22 +12,22 @@ const MenuNav = () => {
   return (
     <ul className="menu__nav">
       <li className="menu__nav-item">
-        <NavLink exact to={routes.HOME} {...props}>
+        <NavLink exact to={ROUTES.HOME} {...props}>
           Home
         </NavLink>
       </li>
       <li className="menu__nav-item">
-        <NavLink to={routes.ABOUT} {...props}>
+        <NavLink to={ROUTES.ABOUT} {...props}>
           About Me
         </NavLink>
       </li>
       <li className="menu__nav-item">
-        <NavLink to={routes.WORK} {...props}>
+        <NavLink to={ROUTES.WORK} {...props}>
           My Work
         </NavLink>
       </li>
       <li className="menu__nav-item">
-        <NavLink to={routes.CONTACT} {...props}>
+        <NavLink to={ROUTES.CONTACT} {...props}>
           How To Reach Me
         </NavLink>
       </li>
