@@ -14,6 +14,11 @@ const data = [
     live: 'https://cra-redux-starter-kit.firebaseapp.com/',
     source: 'https://github.com/sydinh/cra-redux-starter-kit',
   },
+  {
+    id: 3,
+    live: 'https://nasa-collection.firebaseapp.com/',
+    source: 'https://github.com/sydinh/nasa-collection',
+  },
 ];
 
 export { data };
