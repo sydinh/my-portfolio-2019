@@ -15,10 +15,10 @@ const data = [
   },
   {
     id: 2,
-    worked_at: 'Framgia Inc.',
+    worked_at: 'Sun*',
     worked_with_role: 'Frontend Developer',
     description:
-      'Currently, I am working here. Everything is going well, I work and contribute a lots for my team as well as my company. I am so proud to be a part of Framgia Inc so far. We work with the slogan "WE MAKE IT AWESOME !"',
+      'Currently, I am working here. Everything is going well, I work and contribute a lots for my team as well as my company. I am so proud to be a part of Sun* so far. We work with the slogan "WE MAKE IT AWESOME !"',
   },
 ];
 
