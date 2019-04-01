@@ -4,7 +4,7 @@ const List = () => (
   <div className="contact__list">
     <div className="contact__item">
       <span className="text-brand">Email:</span>
-      sydinh.dev@gmail.com
+      dinhhiepsy@gmail.com
     </div>
     <div className="contact__item">
       <span className="text-brand">Phone:</span>
