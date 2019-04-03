@@ -5,7 +5,7 @@ import { ReactComponent as IconTwitter } from 'images/twitter.svg';
 import { ReactComponent as IconLinkedin } from 'images/linkedin-brands.svg';
 
 const ShareBtn = () => {
-  const url = 'my-portfolio-2019.firebaseapp.com';
+  const url = 'https://my-portfolio-2019.firebaseapp.com/';
 
   return (
     <ul className="share-btn">
