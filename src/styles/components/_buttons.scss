@@ -1,0 +1,44 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the buttons component.
+// -----------------------------------------------------------------------------
+
+.share-btn {
+  $this: &;
+
+  @include position(fixed, 50%, 0, null, null);
+  @include list-unstyled;
+  z-index: z(upper);
+  width: 50px;
+  transform: translateY(-50%);
+
+  &__item {
+    width: 100%;
+    height: 50px;
+  }
+
+  &__link {
+    @include flexbox-centering;
+    width: 100%;
+    height: 100%;
+
+    &.is-facebook {
+      background: #3b5998;
+
+      #{$this}__icon {
+        width: 18%;
+      }
+    }
+
+    &.is-twitter {
+      background: #83c3f3;
+    }
+
+    &.is-linkedin {
+      background: #0077b5;
+    }
+  }
+
+  &__icon {
+    width: 30%;
+  }
+}
