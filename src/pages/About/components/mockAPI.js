@@ -18,7 +18,14 @@ const data = [
     worked_at: 'Sun*',
     worked_with_role: 'Frontend Developer',
     description:
-      'Currently, I am working here. Everything is going well, I work and contribute a lots for my team as well as my company. I am so proud to be a part of Sun* so far. We work with the slogan "WE MAKE IT AWESOME !"',
+      'Everything was going well, I work and contribute enthusiastically for my team as well as my company. I am so proud to be a part of Sun* where we work with the slogan "Make awesome things that matter."',
+  },
+  {
+    id: 3,
+    worked_at: 'NFQ Asia',
+    worked_with_role: 'Frontend Developer',
+    description:
+      'Currently, I am working here. Having a lot of things to share, but not now. Stay tuned. Hihi...',
   },
 ];
 
