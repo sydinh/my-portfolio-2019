@@ -6,6 +6,7 @@ import { ReactComponent as IconLinkedin } from 'images/linkedin-brands.svg';
 
 const ShareBtn = () => {
   const url = 'https://my-portfolio-2019.firebaseapp.com/';
+  const props = { target: '_blank', rel: 'noopener noreferrer' };
 
   return (
     <ul className="share-btn">
@@ -13,6 +14,7 @@ const ShareBtn = () => {
         <a
           href={`https://www.facebook.com/sharer.php?u=${url}`}
           className="share-btn__link is-facebook"
+          {...props}
         >
           <IconFacebook className="share-btn__icon" />
         </a>
@@ -21,6 +23,7 @@ const ShareBtn = () => {
         <a
           href={`https://twitter.com/intent/tweet?url=${url}&text=SyDinh&via=sydinhhiep&hashtags=Twitter`}
           className="share-btn__link is-twitter"
+          {...props}
         >
           <IconTwitter className="share-btn__icon" />
         </a>
@@ -29,6 +32,7 @@ const ShareBtn = () => {
         <a
           href={`https://www.linkedin.com/shareArticle?mini=true&url=${url}`}
           className="share-btn__link is-linkedin"
+          {...props}
         >
           <IconLinkedin className="share-btn__icon" />
         </a>
