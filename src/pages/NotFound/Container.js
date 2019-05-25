@@ -1,8 +1,9 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
+import { compose } from 'recompose';
 
 import withScroll from 'utils/withScroll';
+import withPageTitle from 'utils/withPageTitle';
 import PrimaryLayout from 'layouts/PrimaryLayout';
 import * as ROUTES from 'constants/routes';
 
@@ -10,9 +11,6 @@ import Main from 'components/Main';
 
 const NotFoundContainer = () => (
   <PrimaryLayout>
-    <Helmet>
-      <title>Not Found</title>
-    </Helmet>
     <Main page="notfound">
       <div className="notfound__logo">404</div>
       <h1 className="notfound__title text-brand">Sorry, page not found!</h1>
@@ -24,4 +22,7 @@ const NotFoundContainer = () => (
   </PrimaryLayout>
 );
 
-export default withScroll(NotFoundContainer);
+export default compose(
+  withScroll,
+  withPageTitle('Not Found'),
+)(NotFoundContainer);

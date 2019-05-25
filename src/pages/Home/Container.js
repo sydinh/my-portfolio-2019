@@ -1,9 +1,9 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { compose } from 'recompose';
 
 import withScroll from 'utils/withScroll';
 import withMenu from 'utils/withMenu';
+import withPageTitle from 'utils/withPageTitle';
 import PrimaryLayout from 'layouts/PrimaryLayout';
 
 import Main from 'components/Main';
@@ -14,9 +14,6 @@ import List from './components/List';
 
 const HomeContainer = () => (
   <PrimaryLayout>
-    <Helmet>
-      <title>Welcome To My Portfolio</title>
-    </Helmet>
     <Main page="home">
       <Heading>
         Sy <span className="text-brand">Dinh</span>
@@ -30,4 +27,5 @@ const HomeContainer = () => (
 export default compose(
   withScroll,
   withMenu,
+  withPageTitle('Welcome To My Portfolio'),
 )(HomeContainer);
