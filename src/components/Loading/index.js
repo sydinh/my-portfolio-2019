@@ -1,5 +1,6 @@
 import React from 'react';
 
+import withPageTitle from 'utils/withPageTitle';
 import Main from 'components/Main';
 import { ReactComponent as TailSpin } from 'images/tail-spin.svg';
 
@@ -9,4 +10,4 @@ const Loading = () => (
   </Main>
 );
 
-export default Loading;
+export default withPageTitle('Loading')(Loading);

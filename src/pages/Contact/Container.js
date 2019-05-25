@@ -1,9 +1,9 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { compose } from 'recompose';
 
 import withScroll from 'utils/withScroll';
 import withMenu from 'utils/withMenu';
+import withPageTitle from 'utils/withPageTitle';
 import SecondaryLayout from 'layouts/SecondaryLayout';
 
 import Main from 'components/Main';
@@ -14,9 +14,6 @@ import List from './components/List';
 
 const ContactContainer = () => (
   <SecondaryLayout>
-    <Helmet>
-      <title>Contact Me</title>
-    </Helmet>
     <Main hasFooter page="contact">
       <Heading>
         Contact <span className="text-brand">Me</span>
@@ -30,4 +27,5 @@ const ContactContainer = () => (
 export default compose(
   withScroll,
   withMenu,
+  withPageTitle('Contact Me'),
 )(ContactContainer);

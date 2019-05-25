@@ -1,9 +1,9 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { compose } from 'recompose';
 
 import withScroll from 'utils/withScroll';
 import withMenu from 'utils/withMenu';
+import withPageTitle from 'utils/withPageTitle';
 import SecondaryLayout from 'layouts/SecondaryLayout';
 
 import Main from 'components/Main';
@@ -14,9 +14,6 @@ import List from './components/List';
 
 const WorkContainer = () => (
   <SecondaryLayout>
-    <Helmet>
-      <title>View My Work</title>
-    </Helmet>
     <Main hasFooter page="work">
       <Heading>
         My <span className="text-brand">Work</span>
@@ -30,4 +27,5 @@ const WorkContainer = () => (
 export default compose(
   withScroll,
   withMenu,
+  withPageTitle('View My Work'),
 )(WorkContainer);

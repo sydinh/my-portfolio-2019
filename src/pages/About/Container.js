@@ -1,9 +1,9 @@
 import React from 'react';
-import { Helmet } from 'react-helmet';
 import { compose } from 'recompose';
 
 import withScroll from 'utils/withScroll';
 import withMenu from 'utils/withMenu';
+import withPageTitle from 'utils/withPageTitle';
 import SecondaryLayout from 'layouts/SecondaryLayout';
 
 import Main from 'components/Main';
@@ -15,9 +15,6 @@ import Jobs from './components/Jobs';
 
 const AboutContainer = () => (
   <SecondaryLayout>
-    <Helmet>
-      <title>About Me</title>
-    </Helmet>
     <Main hasFooter page="about">
       <Heading>
         About <span className="text-brand">Me</span>
@@ -32,4 +29,5 @@ const AboutContainer = () => (
 export default compose(
   withScroll,
   withMenu,
+  withPageTitle('About Me'),
 )(AboutContainer);
