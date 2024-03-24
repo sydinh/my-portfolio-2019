@@ -16,10 +16,10 @@ const ProjectCard = ({ live, source }) => {
       <a href={live} className="project__img-container" {...props}>
         <img src={Project} alt="Project screenshot" className="project__img" />
       </a>
-      <a href={live} className="project__btn project__btn-light" {...props}>
+      {/* <a href={live} className="project__btn project__btn-light" {...props}>
         <Eye className="project__btn-icon" />
         Project
-      </a>
+      </a> */}
       <a href={source} className="project__btn project__btn-dark" {...props}>
         <Github className="project__btn-icon" />
         Github

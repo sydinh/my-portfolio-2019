@@ -4,7 +4,8 @@
 
 .contact {
   &__list {
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
   }
 
   &__item {
@@ -13,7 +14,7 @@
     margin: 15px;
     padding: 8px 16px;
     border: 3px solid $white;
-    font-size: 32px;
+    font-size: 26px;
 
     span {
       padding-right: 10px;

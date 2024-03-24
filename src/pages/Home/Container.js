@@ -18,7 +18,7 @@ const HomeContainer = () => (
       <Heading>
         Sy <span className="text-brand">Dinh</span>
       </Heading>
-      <SubHeading>A front-end developer based in Viet Nam</SubHeading>
+      <SubHeading>A front-end developer based in Vietnam</SubHeading>
       <List />
     </Main>
   </PrimaryLayout>

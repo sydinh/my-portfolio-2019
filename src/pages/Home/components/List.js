@@ -17,7 +17,7 @@ const List = () => {
       <a href="https://twitter.com/sydinhhiep" {...props}>
         <Twitter className="home__icon" />
       </a>
-      <a href="https://www.facebook.com/sydinhhiep" {...props}>
+      <a href="https://www.facebook.com/iamsydinh" {...props}>
         <Facebook className="home__icon" />
       </a>
       <a href="https://www.linkedin.com/in/sydinh/" {...props}>

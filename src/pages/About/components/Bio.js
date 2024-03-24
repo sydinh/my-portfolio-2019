@@ -8,10 +8,9 @@ const Bio = () => (
     <div className="about__bio-content">
       <h2 className="about__bio-title text-brand">Bio</h2>
       <p className="about__bio-desc">
-        I believe in "HTML for the content, CSS for the presentation, JavaScript for the
-        interaction".
+        I believe in "HTML for the content, CSS for the presentation, and JavaScript for the interaction".
       </p>
-      <p className="about__bio-desc">And, I am here to do all these interesting things.</p>
+      <p className="about__bio-desc">And I am here to do all these exciting things.</p>
     </div>
   </div>
 );

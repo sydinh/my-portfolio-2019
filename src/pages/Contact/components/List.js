@@ -12,7 +12,7 @@ const List = () => (
     </div>
     <div className="contact__item">
       <span className="text-brand">Address:</span>
-      Da nang, Viet nam
+      Ho Chi Minh City, Vietnam
     </div>
   </div>
 );
